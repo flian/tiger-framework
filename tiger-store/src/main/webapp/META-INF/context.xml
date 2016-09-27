@@ -58,6 +58,6 @@
             username="root"
             password="Admin123"
             driverClassName="com.mysql.jdbc.Driver"
-            url="jdbc:mysql://172.19.64.35:3306/ettodaypoc?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull"
+            url="jdbc:mysql://127.0.0.1:3306/tiger_db?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull"
             />
 </Context>

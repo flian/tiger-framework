@@ -29,18 +29,18 @@
     <tx:annotation-driven/>
 
     <!-- Configured DataSource -->
-   <!--  <bean id="frameworkDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    <bean id="frameworkDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName">
             <value>java:comp/env/jdbc/tiger</value>
         </property>
-    </bean> -->
-    
+    </bean>
+    <!--
     <bean id="frameworkDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 	  <property name="driverClassName" value="com.mysql.jdbc.Driver" />
 	  <property name="url" value="jdbc:mysql://172.19.64.35:3306/ettodaypoc?useUnicode=true&amp;characterEncoding=UTF-8" />
 	  <property name="username" value="root" />
 	  <property name="password" value="Admin123" />
-	</bean>
+	</bean> -->
 
     <!-- JDBC Transaction Management-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
