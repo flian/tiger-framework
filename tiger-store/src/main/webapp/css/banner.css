@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner {overflow:hidden; }
+.banner .num {overflow:hidden; width:100%; height:15px; position:absolute; bottom:5px; text-align:center; zoom:1; z-index:3}
+.banner .num ul {width:100%; float:left; line-height:15px;}
+.banner .num li {display:inline-block; width:10px; height:10px; line-height:10px; background:#FFF; margin-left:8px; border-radius:50%; cursor:pointer; text-indent:-100px; overflow:hidden;}
+.banner .num li.on {background:#FF7700;} 
+
+.banner .prev,.banner .next {width:40px; height:100px; background:url(../images/btn.png) no-repeat; position:absolute; top:100px; filter:alpha(opacity=10); -moz-opacity:0.1;opacity:0.1;}
+.banner .prev {left:0; border-radius:0 5px 5px 0;}
+.banner .next {right:0; background-position:right 0; border-radius:5px 0 0 5px;}
+.banner .prev:hover,.banner .next:hover {filter:alpha(opacity=55); -moz-opacity:0.55; opacity:0.55;}

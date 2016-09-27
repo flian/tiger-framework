@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<!-- Demostration for Sql Mapping File -->
+
+<!-- Namespace should be the same as full-qualified package interface -->
+<mapper namespace="com.tiger.framework.dao.IShiroUserMapper"> 
+
+    <select id="fetchUserByName" resultMap="shiroUser">
+		SELECT ID,USERNAME,PASSWORD
+		FROM SHIRO_USERS 
+		WHERE USERNAME = #{userName}
+	</select>
+	
+	
+	<select id="fetchUserRolesByName" resultType="java.lang.String">
+	    SELECT sr.ROLE_DESCRIPTION  
+	    FROM SHIRO_USERS su ,SHIRO_ROLES sr, SHIRO_R_USER_ROLE srur 
+	    WHERE su.USERNAME=#{userName} AND su.ID=srur.USER_ID AND srur.ROLE_ID=sr.ID
+	</select>
+	
+	<select id="fetchUserPermissionsByName" resultType="java.lang.String">
+		SELECT sp.PERMISSION_DESCRIPTION
+		FROM SHIRO_USERS su,SHIRO_ROLES sr,SHIRO_R_USER_ROLE srur,SHIRO_PERMISSIONS sp,SHIRO_R_ROLE_PERMISSION srrp 
+		WHERE su.USERNAME=#{userName} AND su.ID=srur.USER_ID AND srur.ROLE_ID=sr.ID AND sr.ID=srrp.ROLE_ID AND srrp.PERMISSION_ID = sp.ID
+	</select>
+	
+	<select id="fetchUserMenusByName" resultMap="shiroUserMenu">
+		SELECT DISTINCT sres.ID,sres.RESOURCE_NAME,sres.RESOURCE_URL 
+		FROM SHIRO_USERS su,SHIRO_ROLES sr,SHIRO_R_USER_ROLE srur,SHIRO_RESOURCES sres,SHIRO_R_ROLE_RESOURCE srrr
+        WHERE sres.RESOURCE_TYPE=1 AND su.USERNAME=#{userName} AND su.ID=srur.USER_ID AND srur.ROLE_ID=sr.ID AND sr.ID=srrr.ROLE_ID AND srrr.RESOURCE_ID=sres.ID
+	</select>
+	
+	
+	<resultMap type="com.tiger.framework.datamodel.ShiroUser" id="shiroUser">
+		<result property="id" column="ID" />
+		<result property="userName" column="USERNAME" />
+		<result property="password" column="PASSWORD" />
+	</resultMap>
+	
+	<resultMap type="com.tiger.framework.datamodel.Menu" id="shiroUserMenu">
+	    <result property="id" column="ID"/>
+	    <result property="name" column="RESOURCE_NAME"/>
+	    <result property="url"  column="RESOURCE_URL"/>
+	</resultMap>
+    
+</mapper>

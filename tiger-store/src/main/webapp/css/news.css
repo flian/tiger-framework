@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.newsList,.list,.list li,.newsDetails,.title,.newsDetails .cont {width:100%; float:left;}
+
+
+.newsList,.newsDetails {border:1px solid #DDD;}
+.newsList .title {height:40px; line-height:40px; background:#F0F0F0;}
+.newsList .title span {float:left; padding-left:10px;}
+.newsList .list,.newsDetails {padding:10px 30px 20px;}
+.newsList .list li {padding:10px 0; border-bottom:1px dotted #DDD;}
+.newsList .list li i {display:inline-block; padding:0 5px; margin-right:5px; line-height:20px; color:#FFF; font-size:12px; background:#F52427; font-style:normal; border-radius:3px;}
+.newsList .list li span {float:right; font-size:12px; color:#AAA;}
+
+
+.newsDetails {}
+.newsDetails .title h2 {line-height:60px; border-bottom:1px dotted #DDD; margin-bottom:5px;}
+.newsDetails .cont {padding:20px; min-height:300px; *height:300px;}
+.newsDetails .cont p {line-height:24px;}
+.newsDetails .cont .memberPic {margin:15px 0;}
+.newsDetails .cont .memberPic img { max-width:100%; min-width:300px;}
+.newsDetails .cont .button {margin-top:50px;}
+.newsDetails .cont .button .btn {width:200px; height:50px; font-size:18px; line-height:30px;}
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+@charset "utf-8"; 
+/* CSS Document */ 
+
+body {color:#FFF;}
+.inHide {display:none!important;}
+.content {background-color:#DD5231;}
+#wapperKong {width:100%;}
+#part01 {width:100%; height:auto; float:left; background-color:#FFB922;}
+#part01 .part01Cont {width:100%; height:811px; background-image:url("../images/active/jfhh/img01.jpg"); background-position:center top; background-repeat:no-repeat; padding-top:506px;}
+#part01 .part01Cont .intEach {width:812px; text-align:center; margin:0 auto;}
+#part01 .part01Cont .intInput {width:170px; height:54px; line-height:54px; padding-left:10px; font-size:24px; color:#474747; margin-right:36px; position:relative; bottom:2px; border:none; border-radius:8px; -webkit-border-radius:8px; -o-border-radius:8px; -moz-border-radius:8px; -ms-border-radius:8px;}
+#part01 .part01Cont .int01,#part01 .part01Cont .int02 {display:inline-block; width:180px; height:54px; text-align:center; line-height:54px; color:#757575; font-size:28px; background-color:#FFF; margin-right:24px; border:none; border-radius:8px; -webkit-border-radius:8px; -o-border-radius:8px; -moz-border-radius:8px; -ms-border-radius:8px;}
+#part01 .part01Cont .intBtn {display:inline-block; background-image:url("../images/active/jfhh/img03.jpg"); height:62px; width:62px; margin-right:20px; position:relative; top:20px; cursor:pointer;}
+#part01 .part01Cont .theBtn {background-image:url("../images/active/jfhh/img02.png"); height:73px; width:204px; font-size:30px; color:#5a340c; text-align:center; line-height:68px; margin:42px auto 0; cursor:pointer;}
+#part02 {width:100%; float:left;}
+#part02 .cont {width:800px; margin:30px auto 50px; display:table; color:#FFF;}
+#part02 .cont p {font-size:16px; line-height:30px;}
+#layerDiv {position:fixed; width:100%; height:100%; background-color:#000; opacity:0.7; filter:alpha(opacity=70); z-index:1; top:0; left:0;}
+#layerCont {background-image:url("../images/active/jfhh/img04.png"); height:236px; width:553px; position:fixed; left:0; right:0; top:0; bottom:0; margin:auto; z-index:2;}
+#layerCont .layerCont01 {text-align:center;}
+#layerCont .layerCont01 .layerContText {font-size:27px; color:#ff0000; text-align:center; margin-top:60px;}
+#layerCont .layerCont01 .span02,#layerCont .layerCont01 .span05 {color:#ad4900; margin:0 10px;}
+#layerCont .layerCont01 .span03 {color:#ffea00; font-size:43px; margin:0 10px;}
+#layerCont .layerCont01 .sureBtn,#layerCont .layerCont01 .closeBtn,#layerCont .layerCont02 .closeBtn {display:inline-block; background-image:url("../images/active/jfhh/img02.png"); height:73px; width:204px; color:#5a340c; font-size:27px; text-align:center; line-height:68px; margin-top:20px; cursor:pointer;}
+#layerCont .layerCont01 .sureBtn {margin-right:50px;}
+#layerCont .layerCont02 {text-align:center;}
+#layerCont .layerCont02 .layerContText02 {font-size:30px; text-align:center; color:#ad4900; margin-top:80px;}

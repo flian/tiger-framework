@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.help .cont {padding-left:10px; font-size:13px;}
+.help ul,.list ul {margin:10px 0;}
+.help ol {font-size:14px; font-weight:700;}
+.help li,.list li {list-style:inside disc; padding-left:10px; line-height:24px;}
+.help li a {margin-left:-3px;}
+.help li.active a {color:#4EB248;}
+
+.helpCont,.helpCont .cont {width:100%; float:left;}
+.helpCont h2 {height:30px; margin-top:7px; border-bottom:1px solid #DDD;}
+.helpCont h2 span {display:inline-block; float:left; padding:0 10px 3px; line-height:24px; border-bottom:3px solid #4EB248;}
+.helpCont .cont {margin-top:10px; font-size:13px; color:#666;}
+.helpCont .cont p {margin:5px 0;}
+
+.list li {padding-left:5px; border-bottom:1px dotted #DDD; line-height:40px; list-style:inside circle;}

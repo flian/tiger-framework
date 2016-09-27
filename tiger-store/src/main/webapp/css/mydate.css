@@ -1,0 +1,32 @@
+@charset "utf-8"; 
+/* CSS Document */
+
+.reg_text_left span,.inner-btn {background:;}
+.per_regist {width:686px; height:617px; background:;}
+.pop1_close {width:36px; height:37px; right:14px; top:14px; background:; text-indent:-999em;}
+.regist_cent,.reg_calendar {width:780px; margin:30px auto 0; display:table;}
+.regist_cent p {width:200px; height:32px; background:; overflow:hidden; line-height:32px; text-align:center; margin:0 auto; color:#333; font-size:20px;}
+
+.reg_calendar {width:616px; margin-top:10px;}
+.reg_calendar span {display:block; float:left; width:87px; height:47px; background:#4EB248; text-align:center; line-height:47px; font-size:16px; color:#FFF; border-right:1px solid #4EB248;}
+.reg_calendar span.week {color:#275924;}
+.reg_calendar span.wk1 {margin-left:1px;}
+.reg_calendar ul {width:610px; float:left; border-left:1px solid #DDD;}
+.reg_calendar ul li {float:left; width:87px; position:relative; height:49px; text-align:center; font-size:20px; line-height:50px; color:#5b5b5b; background: url(../images/datybg.jpg) no-repeat;}
+.reg_calendar ul li.no_month {color:#d0d0d0;}
+.reg_calendar ul li em {display:block; width:88px; height:50px; position:absolute; top:-1px; left:-1px; z-index:9px; background: url(../images/rgico_q.png) no-repeat center 0;}
+.reg_calendar ul li em.rgico {background: url(../images/rgico_h.png) no-repeat center 0;}
+.reg_text,.regist_cent .button {margin:15px 0 0;}
+.regist_cent .button {margin-top:30px; }
+.regist_cent .button .btn-yellow {display:inline-block; width:187px; height:51px; background:url(../images/sprite.png) no-repeat -860px 0; line-height:48px;}
+.regist_cent .button .btn-yellow,.regist_cent .button .btn-yellow:hover {color:#C5500D;}
+
+.reg_text_left {width:80%; margin:50px 0 0 20px; float:left;}
+.reg_text_left span {display:block; width:93px; height:25px; font-size:14px; color:#474747;}
+.reg_text_left li {color:#666; font-size:12px;}
+.reg_text_right {width:190px; float:right;}
+.reg_text_right p {width:183px; height:50px; border:1px solid #edecec; line-height:50px; text-align:center; font-size:14px; color:#5a5a5a; background:none;}
+.reg_text_right p em {color:#ff5c00; font-size:24px;}
+.reg_text_right p i { color:#ff5c00; font-size:12px; float:none; display:inline; vertical-align:center;}
+.lnkjf {display:block; text-indent:-9999em; width:187px; height:51px; background-position:0 -128px; margin-top:17px;}
+

@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner {position:relative; width:580px; height:301px; float:left;}
+
+
+.noLogin,.login {width:210px; height:301px; float:left; border:1px solid #DDD; border-left:none;}
+.noLogin .pic {padding:20px 0 10px; text-align:center;}
+.noLogin .cont {padding:15px 10px 0;}
+.noLogin .cont li {padding-bottom:15px; position:relative;}
+.noLogin .cont .form-control {text-indent:25px; padding-left:0;}
+.noLogin li .icon {position:absolute; display:inline-block; width:25px; height:30px; background:url(../images/sprite.png) no-repeat;}
+.noLogin li.username .icon {background-position:-670px -40px;}
+.noLogin li.password .icon {background-position:-695px -40px;}
+.noLogin li .btn {width:190px; height:40px; border:none; background:url(../images/sprite.png) no-repeat -670px 0; color:#FFF; letter-spacing:2px;}
+.noLogin .notices ul {padding:5px;}
+.noLogin .notices li {font-size:12px;}
+.noLogin .notices li .fonts {font-family:"宋体";}
+
+.login .pic {width:70px; height:70px; float:left; border-radius:50%; margin:10px; overflow:hidden;}
+.login .userName {width:100px; margin-top:15px; float:left;} 
+.login .cont,.login li,.form,.form li,.login .getGift,.notices {width:100%; float:left; color:#666;}
+.login .cont h3,.noLogin h3 {line-height:32px; text-indent:10px; border-top:1px dotted #CCC; background:#EBEBEB;}
+.login .cont ul {float:left; margin-top:5px;}
+.login .cont li {padding-left:15px; line-height:28px;}
+.login .cont .btn {width:170px; height:38px; margin-top:10px; line-height:22px;}
+.login .cont .btn-default {background:#EEE;}
+.login .leave {float:left; margin:3px 0;} 
+.login .getGift {font-size:12px; line-height:20px;}
+.login .getGift .icon {width:16px; height:16px; background-position:-14px -91px; margin-right:4px;}
+.login .getGift a {color:#06F; text-decoration:underline;}
+
+.news {}
+.news h2 span {font-weight:normal; margin-right:8px;}
+.news ul {margin:0 5px;}
+.news li {line-height:30px;}
+.news .cont .pic {padding:10px 0;}
+
+.prodectList .cont {height:480px;}
+
+.tags {height:37px; border-bottom:2px solid #4EB248;}
+.tags h2,.share h2 {line-height:35px; float:left;}
+.tags h2 span,.share h2 span {margin-left:10px;}
+.tags ul {float:right; margin-top:4px;}
+.tags li {width:90px; height:31px; float:left; margin-left:3px; text-align:center; cursor:pointer; line-height:32px; background:#EEE;} 
+.tags li.active {color:#FFF; background:#4EB248;}
+
+.prodectList .cont {border:1px solid #DDD; border-top:none;}
+
+.midbanner {height:100px;}
+
+.short,.short .cont {width:495px;}
+.short .more,.share .more {float:right; margin-top:10px;}
+.short .cont .item {width:33%;}
+.short .cont .item .info {padding-left:10px;}
+.short .cont .item h2 {max-width:140px;}
+.short .item .pic {width:140px; height:140px;}
+.short .cont {height:auto;}
+.short .item  .info p span {width:115px;} 
+.shop .tags {border-color:#23ACC0;}
+.vip .tags {border-color:#8E5AA0;}
+
+.share,.share .title,.midbanner,.rightList,.words {width:100%; float:left;}
+.share li {width:195px; height:80px; float:left; margin-left:6px;}
+.share li a {display:block; width:100%; height:100%;}
+.share li:first-child {margin-left:0;}
+.share li a:hover {box-shadow:0 0 8px #BFBFBF;}
+
+#myRights .showCont,#myRights .showCont .words {width:640px; background:#F7CC1E;}
+#myRights .showCont .cont {padding:0;}
+#myRights .showCont h2 {background:#E73243;}
+#myRights .showCont .words {padding:5px 15px 10px; color:#834000; background:#EBBC00;}
+#myRights .showCont .words h4 {line-height:30px;}
+#myRights .rightList {padding:10px 0 30px;}
+#myRights .rightList h3 {line-height:40px; padding-bottom:10px;}
+#myRights .rightList h4 {height:44px; line-height:44px; margin:20px 0 10px; color:#81521C;}
+#myRights .rightList li {width:30%; height:170px; margin:0 10px; float:left; text-align:center; background:url(../images/right_bg.gif) no-repeat center top;}
+#myRights .rightList .button {display:inline-block; width:100px; height:34px; line-height:32px; border:1px solid #F9DDDC; margin-top:25px; border-radius:3px;}
+#myRights .rightList .button a {display:block; color:#FFF;}
+#myRights .rightList .button a:hover {color:#E05550; background:#F9DDDC;} 

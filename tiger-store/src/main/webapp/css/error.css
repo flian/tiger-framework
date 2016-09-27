@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content {padding:10px 0;}
+.erroPage {width:740px; height:400px; margin:0 auto; display:table; background:url(../images/erro.png) no-repeat left top;}
+.erroPage h2 {line-height:50px; color:#7C7C7C;}
+.erroPage .words {height:150px; margin:220px 0 0 0; text-align:center;}
+.erroPage .words .button {margin-top:15px;}

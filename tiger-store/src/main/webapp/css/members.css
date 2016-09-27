@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.membersList {width:100%; float:left;}
+
+.membersList {margin:20px 0 0;}
+.membersList .list li {width:25%; height:226px; float:left; padding:11px 0; margin:10px 0; background:url(../images/member_pic_bg.gif) no-repeat center top;}
+.membersList .list li .pic,.membersList li .bottom {width:204px; float:left; margin:0 23px;}
+.membersList .pic {position:relative; height:162px; overflow:hidden;}
+.membersList .pic img {height:162px;}
+.membersList .list li .bottom {margin-top:10px;}
+.membersList .bottom .icon {width:12px; height:10px; background-position:-140px -80px; margin:7px 3px 0 0;}
+.membersList .bottom .liked {background-position:-140px -70px;}
+
+.pic .layout,.pic .layout div {position:relative; width:100%; height:30px; line-height:30px;}
+.pic .layout {z-index:3; bottom:30px;}
+.pic .layout .title {position:absolute; color:#FFF; text-indent:10px; z-index:2; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.pic .layout .bg {position:absolute; height:30px; background:rgba(0,0,0,0.5); z-index:1;}
+
+
+#openUserPic .showCont,#postUserPic .showCont {width:640px;}
+#openUserPic .showCont {margin-left:-350px; margin-top:-250px;}
+.showCont .pic {width:600px; max-height:400px; margin:10px auto;}
+.showCont .pic img {max-height:400px; max-width:600px;}
+.showCont .button {margin-bottom:10px;}
+.showCont .btn {width:130px; height:34px;} 
+.showCont .notice {width:100%; padding:5px 10px; color:#F52427; margin-bottom:10px; border:1px solid #FFE57D; background:#FFF6D2;}
+.showCont .showPic {margin-left:105px;}
+
+#postUserPic .showCont {}
+.tableForm,.tableForm ul,.tableForm li,.tableForm .notice  {width:100%; float:left;}
+.tableForm {margin-bottom:10px;}
+.tableForm li {position:relative; margin:5px 0 5px;}
+.tableForm li label,.tableForm li span,.tableForm li .files {float:left;}
+.tableForm li label {width:100px; margin:0; text-align:right; margin-right:5px; font-weight:100;}
+.tableForm li .text {width:250px; height:24px; float:left; padding-left:5px;}
+.tableForm li .files {width:250px;}
+.tableForm li .kuang {border:1px solid #CCC;}
+.tableForm li span {margin-left:5px;}

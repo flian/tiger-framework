@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background:#FFF; font-family:"Microsoft YaHei";}
+.login-logo {height:70px; margin:15px auto; background-image:url(https://jf-test.infinitus.com.cn/jf/loginstyle/images/login-logo.png);}
+.login-ad {width:100%; height:408px !important; background-color:#F1F1F1; background:url(https://jf-test.infinitus.com.cn/jf/loginstyle/images/login_bg.png) no-repeat center top;}
+.login-app {height:50px; background-image:none;}
+.login-input {background-image:none; margin-left:730px; height:auto; margin-bottom:20px;}
+.logintext {margin-left:750px;}
+.logintext p {padding:3px 0px;}
+#casLoginForm td {padding:5px 0;}
+#casLoginForm .font13 {width:60px; padding:5px 10px 5px 0; font-size:14px; color:#666; text-align:right;}
+#casLoginForm td>input {width:208px; padding:5px; border:1px solid #CCC; border-radius:2px;}
+.tab {margin-top:0;}
+.btnEnter {background-image:none; width:117px; height:38px; border:none; background:#d74545; color:#fff; cursor:pointer; font-size:16px; font-family:"Microsoft YaHei"; font-size:20px; margin-right:20px;}
+.footer {margin:0 auto; border:none;}
+
+
+
+
+

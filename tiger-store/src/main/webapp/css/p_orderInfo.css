@@ -1,0 +1,16 @@
+.main{font-size: 12px;}
+.orderInfo.panel-body{padding:15px 25px; }
+.orderInfo .panel{-webkit-box-shadow:none; box-shadow:none; }
+.orderInfo .panel .panel-heading{padding: 0px}
+.orderInfo .panel .panel-body{padding: 0px;}
+.logistics .title{width: 10%; padding-right: 0px;}
+.logistics .timestamp{width: 18%; padding:0px;}
+.logistics .remark{width: 72%; padding-left:0px;}
+/*.orderInfo .goodsList.table{margin-left:15px; margin-right:15px;}*/
+.orderInfo .goodsList th, .orderInfo .goodsList td{border:1px solid #cccccc; text-align:center;}
+.orderInfo .goodsList .title th{font-size: 14px; font-weight: 700;}
+.list .pic a {float:left; padding:1px; background:#F4F4F5;}
+.list .pic a:hover {background:#4EB248;}
+.list td.lrBorderNone {border-left:none; border-right:none;}
+.orderInfo .total{margin-top: 15px;}
+.orderInfo .hr hr{margin:15px 0px 5px;}

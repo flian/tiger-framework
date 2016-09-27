@@ -1,0 +1,53 @@
+@charset "utf-8"; 
+/* CSS Document */ 
+
+.content {color:#FFF; background:url("../images/active/hyx/img01.jpg") #3B7A5F no-repeat center top;}
+#part01 {margin-top:310px; font-size:28px; font-weight:bold; text-align:center;}
+#part01 > p {margin:0px 0px 5px;}
+#part01 > p ,#part01-2 > p{margin: 0px 0px 5px;}
+#part01-2{margin-top: 30px;font-size: 28px;font-weight: bold;text-align: center;}
+#part02 .toRule{display: inline-block;background-image: url("../images/active/hyx/img02-2.jpg");height: 107px;width: 312px;margin: 40px auto 0px;}
+#part02 .toJoin {display:inline-block; background-image:url("../images/active/hyx/img02.jpg"); height:107px; width:312px; margin:40px auto 0px;}
+#part03 {clear:both; margin:72px auto 0; width:980px;}
+#part03 .showphoto {position:relative; width:210px; float:left; margin:0px 16px 56px;}
+#part03 .showphoto .photoImg,#part03 .showphoto .photoFrame {display:block; width:210px; height:254px;}
+#part03 .showphoto .photoFrame {position:absolute; top:0px; left:0px; z-index:2; background-image:url("../images/active/hyx/img02.png");}
+#part03 .showphoto .photoDescribe {background-color:#000; opacity:0.5; filter:alpha(opacity=50); height:54px; line-height:54px; width:100%; position:absolute; top:172px; left:0px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+#part03 .showphoto .photoDescribeText {font-size:18px; height:54px; line-height:54px; width:174px; position:absolute; top:172px; left:0px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding:0 18px;}
+#part03 .showphoto .photoName {display:inline-block; font-size:18px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin:5px 0 3px; width:116px;}
+#part03 .showphoto .photoPop i {display:inline-block; background-image:url("../images/active/hyx/img03.png"); width:13px; height:11px; margin-right:2px;}
+/*#part03 .showphoto .photoPop i.liked {background-image:url("../images/active/hyx/img03.png");}
+*/#part03 .showphoto .photoPop {display:inline-block; margin:8px 0px 0px; font-size:14px; color:#ADCBBF; float:right;}
+#part04 {clear:both; width:980px; margin:0 auto; text-align:center; position:relative; top:34px;}
+#part04 a {text-decoration:none; display:inline-block;}
+#part04 .prevPage,#part04 .nextPage {height:16px; width:13px;}
+#part04 .prevPage {background-image:url("../images/active/hyx/img05.jpg"); margin-right:30px;}
+#part04 .nextPage {background-image:url("../images/active/hyx/img04.jpg"); margin-left:10px;}
+#part04 .pageNum {height:33px; width:33px; line-height:33px; text-align:center; color:#FFF; font-size:22px; margin-right:20px;}
+#part04 .thisPage {background-image:url("../images/active/hyx/img06.jpg"); color:#3B7A5F;}
+#part05 {width:100%; background-image:url("../images/active/hyx/img07.jpg"); height:178px; background-position:center top; margin-top:34px;}
+#part06 {position:absolute; top:173px; width:100%;}
+#part06 .topLine {width:100%; height:5px; background-color:#FFF067;}
+#part06 .sharePart {width:980px; margin:0 auto;}
+#part06 .shareCont {background-image:url("../images/active/hyx/img08.jpg"); width:220px; height:25px; float:right; color:#3B7A5F; padding:4px 0 0 30px;}
+
+/** dyb 2016-03-04 **/
+#openUserPic .showCont,#postUserPic .showCont {width:640px; color:#666;}
+#openUserPic .showCont {margin-left:-350px; margin-top:-250px;}
+.showCont .pic {width:600px; max-height:400px; margin:10px auto;}
+.showCont .pic img {max-height:400px; max-width:600px;}
+.showCont .button {margin-bottom:10px;}
+.showCont .btn {width:130px; height:34px;} 
+.showCont .notice {width:100%; padding:5px 10px; color:#F52427; margin-bottom:10px; border:1px solid #FFE57D; background:#FFF6D2;}
+.showCont .showPic {margin-left:105px;}
+
+#postUserPic .showCont {}
+.tableForm,.tableForm ul,.tableForm li,.tableForm .notice  {width:100%; float:left;}
+.tableForm {margin-bottom:10px;}
+.tableForm li {position:relative; margin:5px 0 5px;}
+.tableForm li label,.tableForm li span,.tableForm li .files {float:left;}
+.tableForm li label {width:100px; margin:0; text-align:right; margin-right:5px; font-weight:100;}
+.tableForm li .text {width:250px; height:24px; float:left; padding-left:5px;}
+.tableForm li .files {width:250px;}
+.tableForm li .kuang {border:1px solid #CCC;}
+.tableForm li span {margin-left:5px;}

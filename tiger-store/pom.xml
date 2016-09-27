@@ -1,0 +1,252 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.tiger</groupId>
+		<artifactId>tiger-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<!-- tiger 3-dimension coordinate -->
+	<artifactId>tiger-store</artifactId>
+	<packaging>war</packaging>
+	<name>tiger-store</name>
+
+	<!-- Define the artifact lists -->
+	<dependencies>
+
+
+		<!-- depends on tiger core -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>tiger-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		
+		<!-- spring-context -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- spring aop -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- spring beans -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- spring orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- spring web -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- spring web mvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+
+		<!-- mybatis spring integration -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis-spring.version}</version>
+		</dependency>
+
+		<!-- commons dbcp -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>${commons-dbcp.version}</version>
+		</dependency>
+
+		
+		<!-- google gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+		</dependency>
+
+		<!-- jackson -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+			<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- Freemarker configuration -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>${freemarker.version}</version>
+		</dependency>
+		
+		
+		<!-- beanutil -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+
+        
+		
+		<!-- shiro configuration -->
+		<dependency>
+			 <groupId>org.apache.shiro</groupId>
+		 	 <artifactId>shiro-core</artifactId>
+		 	 <version>1.2.2</version>
+		</dependency>
+		
+		<dependency>
+			 <groupId>org.apache.shiro</groupId>
+		 	 <artifactId>shiro-web</artifactId>
+		 	 <version>1.2.2</version>
+		</dependency>
+		
+		<dependency>
+			 <groupId>org.apache.shiro</groupId>
+		 	 <artifactId>shiro-spring</artifactId>
+		 	 <version>1.2.2</version>
+		</dependency>
+		
+		<!-- google kaptcha -->
+		<dependency>
+		  <groupId>com.google.kaptcha</groupId>
+		  <artifactId>kaptcha</artifactId>
+		  <!--<version>2.3.2</version> -->
+			<version>2.3</version>
+		</dependency> 
+		
+		<!-- druid connection pool -->
+		<!--
+		<dependency>
+			 <groupId>com.alibaba</groupId>
+			 <artifactId>druid</artifactId>
+			 <version>0.2.23</version>
+		</dependency>
+		-->
+	</dependencies>
+	
+	
+	    <!-- initial year -->
+    <inceptionYear>2014</inceptionYear>
+    
+    <!-- project license configuration -->
+    <licenses>
+    	<license>
+   		   <name>tiger</name>
+    	   <distribution>repo</distribution>
+   		   <comments>Tiger Demo Project Charles Study</comments>
+	    </license>
+    </licenses>
+    
+    
+    <!-- developer configuration -->
+    <developers>
+        <developer>
+            <id>Charles</id>
+            <name>Charles Wang</name>
+            <email>charles.wang0@pactera.com</email>
+            <organization>Pactera</organization>
+            <roles>
+                <role>Senior Software Architect</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+	
+	<!-- contributors configuration -->
+	<contributors>
+		<contributor>
+			<name>AddPersonHere</name>
+       		<email>addPerson@tiger.com</email>
+       		 <organization>tiger</organization>
+     		 <roles>
+       			 <role>Software Developer</role>
+     		 </roles>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+        <mailingList>
+            <name>Charles Wang</name>
+            <subscribe>charles.wang0@pactera.com</subscribe>
+        </mailingList>
+	</mailingLists>
+	
+	<build>
+		<finalName>tiger-platform</finalName>
+		
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
+			     	 
+		</plugins>
+		
+		
+	</build>
+</project>

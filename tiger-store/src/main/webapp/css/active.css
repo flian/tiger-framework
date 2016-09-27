@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+.activeList,.activeList li,.activeList .pic img,.activeList li h2,.formCont,.reservations,.ticketList,.ticketList .title,.ticketList .notice,.list,.list li,.ticketList h1,.ticket,.myVip,.banner,.getGift,.tags {width:100%; float:left;}
+
+.myVip {margin-top:20px; line-height:30px;}
+.banner {height:400px; background:url(../images/active/banner.jpg) no-repeat center top;}
+.activeList,.reservations {margin:20px 0;}
+.activeList h1 {margin-bottom:20px; padding-bottom:5px; line-height:36px; border-bottom:1px solid #DDD;}
+.activeList li {width:30%; margin:0 1.5% 20px;}
+.activeList li .pic {width:300px; height:155px; float:left;}
+.activeList li .pic img {height:100%; float:left;}
+.activeList li h2 {height:30px; margin:5px 0 0; line-height:30px; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.activeList li h2 a:hover {text-decoration:underline;}
+
+.tags {margin:0px 0 20px;}
+.tags ul {float:left;}
+.tags li {width:auto; padding:0 10px; margin:0;}
+.tags .active a {color:#4EB248;}
+
+.reservations h1 {margin-bottom:10px; padding-bottom:5px; line-height:36px; border-bottom:1px solid #DDD;}
+.reservations .notice {margin:0 0 20px;}
+.formCont li {width:auto; float:left; margin:0; margin-right:10px;}
+.formCont li .text {width:140px; padding:5px; height:30px; font-size:14px;}
+.formCont li .btn {width:110px; height:30px; line-height:16px;}
+
+.getGift {padding:0 20px; text-align:center; vertical-align:text-top;}
+.getGift ul {margin-left:-20px;}
+.getGift li {display:inline-block; width:259px; height:auto; border:1px solid #DDD; padding:0 10px; margin:20px;}
+
+.getGift .giftBox {padding-bottom:30px;}
+.giftBox .icon {width:92px; height:92px; float:none; background-position:0 -147px;}
+.giftBox a {position:relative; display:block; width:100%; height:100%; color:#474747; padding-top:10px;}
+.giftBox h2 {width:100%; height:30px; line-height:30px; margin:10px 0 10px; overflow:hidden;}
+.giftBox p {height:auto; font-size:12px; text-align:left; margin-bottom:10px; line-height:20px; overflow:hidden;}
+.giftBox .button {position:absolute; display:inline-block; left:30px; bottom:-55px; width:176px; height:45px; color:#FFF; background:url(../images/sprite.png) no-repeat -860px -57px; line-height:45px; margin:0;}
+
+.getGift .none .icon {background-position:-94px -147px;}
+.getGift .none .button  {background:url(../images/sprite.png) no-repeat -860px -102px;}
+
+
+.ticketList h1 {height:40px; padding:5px 0; line-height:30px; margin-bottom:10px; border-bottom:1px solid #DDD;}
+.ticketList h1 span {color:#D2280E;}
+.ticketList .list {margin-bottom:10px;}
+.ticketList .list li {width:49%; margin-right:10px;}
+.ticketList .list .button {display:block; float:right;}
+.ticketList .list .none {height:110px; line-height:110px; text-align:center;}
+
+.ticketList .notice {width:49%; margin:0 10px 10px 0; background:#F1F2F3; padding:10px;}
+.ticketList .notice h3 {line-height:30px;}
+.ticketList .notice p {padding:0 5px; line-height:22px; font-size:12px;}
+
+.ticket {border:4px solid #DDD; background:#F0F0F0;}
+.ticket .pic,.ticket .button {width:60%; height:110px; float:left; text-align:center;}
+.ticket .pic {background:#FFF;}
+.ticket .pic .img {width:100px; height:70px; margin:10px auto 0; display:table;}
+.ticket .pic .img img {width:100%; float:left;}
+.ticket .pic h3 {line-height:30px;}
+.ticket .button {display:block; width:40%; padding:10px;}
+.ticket .button .btn {width:80px; height:26px; margin-top:30px; line-height:12px; font-size:12px;}
+
+.ticketList .active {border-color:#4EB248; background:#DCFDDA;}
+
+
+.tableA .title td {color:#FFF; background:#4EB248;}

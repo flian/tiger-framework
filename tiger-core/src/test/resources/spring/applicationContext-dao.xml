@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/jee
+           http://www.springframework.org/schema/jee/spring-jee.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- Enable Annotation Configuration -->
+    <context:annotation-config/>
+
+    <!-- Enable Package Scan-->
+    <context:component-scan base-package="com.tiger.framework.dbservice.impl"/>
+
+    <!-- Enable Annotation -->
+    <tx:annotation-driven/>
+
+    <!-- Configured DataSource -->
+   <!--  <bean id="frameworkDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName">
+            <value>java:comp/env/jdbc/tiger</value>
+        </property>
+    </bean> -->
+    
+    <bean id="frameworkDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	  <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	  <property name="url" value="jdbc:mysql://172.19.64.35:3306/ettodaypoc?useUnicode=true&amp;characterEncoding=UTF-8" />
+	  <property name="username" value="root" />
+	  <property name="password" value="Admin123" />
+	</bean>
+
+    <!-- JDBC Transaction Management-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource">
+            <ref bean="frameworkDataSource"/>
+        </property>
+    </bean>
+
+    <!-- Transaction Template-->
+    <bean id="frameworkTransactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager">
+            <ref bean="transactionManager"/>
+        </property>
+    </bean>
+
+    <!-- Mybatis Sql Session Factory Configuration-->
+    <bean id="frameworkSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- MyIbatis Configuration File Path -->
+        <property name="configLocation">
+            <value>classpath:database/mybatis-config.xml</value>
+        </property>
+		
+		<property name="mapperLocations">
+   			<value>classpath:mybatis/*.xml</value>
+   		</property>
+   		
+        <property name="dataSource">
+            <ref bean="frameworkDataSource"/>
+        </property>
+
+    </bean>
+
+    <!-- Sql Session -->
+    <bean id="frameworkSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="frameworkSqlSessionFactory"/>
+        <constructor-arg index="1" value="BATCH"/>
+    </bean>
+
+    <!-- Thread Safe Sql Session Template-->
+    <bean id="frameworkSqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg ref="frameworkSqlSessionFactory"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+.item,.item .cont,.myAddress,.myPhone,.success,.formCont,.list,.serviceList li,.success .pull-right h2,.success .pull-right p,.success .button {width:100%; float:left;}
+
+.item {}
+.item h2 {height:36px; line-height:36px; text-indent:10px; background:#4EB248;}
+.item .more {padding:0 15px 0 10px; background:#4AA944;}
+.item .more a {color:#FFF;}
+.item .more a:hover {text-decoration:underline;}
+.item .cont {padding:20px 30px; border:1px solid #DDD; border-top:none;}
+.item .cont h3 {margin:10px 0;}
+.item .cont .row {margin:0;}
+.item .cont .row .pic {line-height:80px;}
+.item .cont .row .pic img { border:1px solid #EEE; padding:1px; margin-right:10px;}
+.jd {}
+.jd h2 {background:#21A8C0;}
+.jd .more {background:#1F9FB6;}
+
+.money {}
+.money .cont {padding:10px 10px 20px;}
+.money h2 {background:#E4393C;}
+.money .more {background:#D83639;}
+.money p {text-align:right; margin:0 0 5px;}
+.money p span {display:inline-block; width:80px; text-align:right;}
+.money p font {display:inline-block; width:320px; text-align:left;}
+.money .icon {width:16px; height:16px; margin:3px 0 0 17px; background-position:-73px -70px;}
+.money .button .btn {min-width:140px; height:40px; float:right; margin:0 180px 0 0; line-height:28px;}
+.money .button .getPrize {margin:0;}
+
+.myAddress,.myPhone {padding:5px 10px;}
+.myAddress i {display:inline-block; padding:0 5px; margin-right:10px; line-height:20px; color:#FFF; background:#F52427; font-style:normal; border-radius:3px;}
+.myAddress span {margin-right:30px;}
+.myAddress .editAddress {margin:0;}
+
+.myPhone .text {height:24px; float:left; padding-left:5px;}
+.myPhone span {margin-left:10px;}
+
+/** changeAddress **/
+#changeAddress .showCont,#changeMyAddress .showCont {width:760px; top:0; margin:100px 0 0 -380px;}
+#changeAddress .showCont .cont {padding-top:5px; max-height:450px; overflow-y:auto;}
+#editMyAddress .showCont {width:600px; margin-left:-300px;}
+.showCont .notice {width:100%; padding:5px 10px; color:#F52427; margin-bottom:10px; border:1px solid #FFE57D; background:#FFF6D2;}
+
+.success {border:1px solid #DDD; min-height:380px; padding:60px 20px; margin:20px 0;}
+.success .pull-left {width:220px;}
+.success .pull-left .icon {width:46px; height:32px; float:right; background-position:-94px -70px;}
+.success .pull-left .icon01 {width:77px; height:77px; background-position:-217px -70px;}
+.success .pull-right {width:720px;}
+.success .pull-right p {}
+.success .pull-right h2 {margin-bottom:10px;}
+.success .pull-right .black {margin:10px 0;}
+.success .button {margin:15px 0 10px;}
+.success .button .btn {width:auto; height:38px; padding:9px 30px; font-size:16px; line-height:18px; margin-right:20px;}
+
+/** tableForm **/
+.tableForm {margin:5px 0;}
+.tableForm li {}
+.tableA {margin-top:5px;}
+.tableA .title th {padding:5px 0;}
+.tableA > tbody > tr > td {line-height:18px; padding:8px 5px;}
+
+#editMyAddress .tableForm li {margin-bottom:10px;}
+#editMyAddress .tableForm li span {width:140px; line-height:28px; text-align:right;}
+#editMyAddress .tableForm li .text {width:245px !important; height:28px !important;}
+#editMyAddress .tableForm li select.text {width:75px !important; float:left; margin-right:10px;}
+#editMyAddress .tableForm li .longth {width:400px !important;}
+#editMyAddress .tableForm li .short {width:150px !important;}
+#editMyAddress .tableForm li .btn {width:130px !important; height:40px !important;}
+#editMyAddress .tableForm li.button {margin:15px 0 20px;}
+#changeMyAddress .tableA {margin-top:10px;}
+#changeMyAddress .tableA .title th {padding:10px 0;}
+#changeMyAddress .tableA > tbody > tr > td {line-height:22px; padding:10px 8px;}
+
+/** serviceList **/
+.serviceList {width:220px; margin:10px 20px; height:320px; border:1px solid #CCC; border-radius:3px;}
+.serviceList h3 {height:40px; background:#EEE; text-indent:5px; line-height:40px;}
+.serviceList ul {width:100%; max-height:300px; float:left; overflow-y:auto;}
+.serviceList li {height:30px; font-size:13px; line-height:30px;}
+.serviceList li a {display:block; width:100%; height:100%; color:#666; float:left; text-indent:10px;}
+.serviceList li a:hover {background:#F0F0F0;}
+.serviceList li.active a {color:#FFF; background:#4EB248;}
+
+.formCont .button {width:220px; height:320px; float:left; padding-top:40px; margin:10px 0; text-align:center;}
+.formCont .button label {width:100%; float:left; margin-top:15px;}
+.formCont .button .btn {width:100px;}

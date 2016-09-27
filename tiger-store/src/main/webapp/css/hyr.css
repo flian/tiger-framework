@@ -1,0 +1,26 @@
+@charset "utf-8"; 
+/* CSS Document */ 
+
+.content {background-color:#A40C26; background-image:url("../images/active/hyr/img01.jpg"); background-repeat:no-repeat; background-position:center top;}
+#part01 {color:#FFF; text-align:center; padding-top:450px;}
+#part01 > div {font-size:25px;}
+#part01 > div > span {color:#fce55a;}
+#part01 > p {color:#e997a6; font-size:16px; width:960px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; margin:10px auto 0;}
+#part02 {height:103px; margin-top:16px;}
+#part02 ul {width:980px; margin:0 auto;}
+#part02 li {list-style:none; float:left; width:195px; height:103px; border-right:1px dashed #FFF;}
+#part02 li img {display:block; width:100%; height:100%;}
+#part02 li.lastLi {border-right:none;}
+#part03 {margin-top:170px; padding-bottom:130px;}
+#part03 ul {width:1000px; margin:0 auto;}
+#part03 li {display:inline-block; width:189px; height:300px; padding-bottom:20px; background-color:#FFF; list-style:none; border:1px solid #CC3F00; margin:0 2px 20px;}
+#part03 li img {display:block; width:170px; height:160px; margin:6px auto 0;}
+#part03 li .theName {font-size:12px; color:#494949; margin:6px 0 0; border-bottom:1px solid #E0E0E0; padding:0 12px 8px;}
+#part03 li .integral {color:#FF3434; font-size:12px; text-align:center; margin:8px 0;}
+#part03 li .integral .needIntegral {font-size:14px;}
+#part03 li .goBuy {display:block; width:149px; height:37px; margin:0 auto; background-color:#FF335C; text-align:center; line-height:37px; color:#FFF; font-size:18px; font-weight:bold; text-decoration:none;}
+#part03 li .goBuy span {display:inline-block; background-image:url("../images/active/hyr/img02.jpg"); height:18px; width:11px; position:relative; left:10px; top:3px;}
+#part04 {position:absolute; top:173px; width:100%;}
+#part04 .topLine {width:100%; height:5px; background-color:#910015;}
+#part04 .sharePart {width:1000px; margin:0 auto;}
+#part04 .shareCont {background-image:url("../images/active/hyr/img03.png"); background-repeat:no-repeat; width:266px; height:34px; float:right; color:#FFF; padding-left:30px; padding-top:4px;}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner,.tags,.main .cont,.productInfo,.picList,.moreLinks,.charge,.addressInfo,.buyNumber,.button,.notice,.formCont,.guestbook,.guestList,.guestList li {width:100%; float:left;}
+
+.main .cont {border:1px solid #DDD; padding:10px; border-top:none;}
+
+.main .tags {height:40px; border:1px solid #DDD; color:#666; background:#F3F3F3;}
+.main .tags ul {float:left; border-right:1px solid #DDD;}
+.main .tags li {width:150px; height:38px; float:left; font-size:16px; line-height:40px; text-align:center; border-left:1px solid #DDD; background:#FFF; cursor:pointer;}
+.main .tags li:first-child {border-left:none;}
+.main .tags li.active {height:39px; color:#474747; border-bottom:3px solid #4EB248;}
+
+.productInfo {padding:10px; background:#FFF; margin-bottom:1px;}
+.productInfo .info {width:550px; float:left; margin:0 0 20px 20px;}
+.productInfo .info .mainInfo {height:354px;}
+.productInfo .info h2 {float:left; margin-right:10px;}
+.productInfo .itemName,.productInfo .charge,.productInfo .addressInfo,.productInfo .buyNumber,.productInfo .service,.productInfo .words {width:100%; float:left; padding:10px; padding-bottom:5px;}
+.productInfo .charge {margin:5px 0; padding:10px; padding-bottom:0; line-height:34px;}
+.productInfo .info div .title {width:75px; float:left;}
+.productInfo .info .addressInfo .address {margin-right:10px;}
+.productInfo .charge ul {width:450px; height:auto; float:left;}
+.productInfo .charge li {width:45%; height:34px; float:left; padding:0; line-height:30px; margin:0; margin:0 5% 10px 0;}
+.productInfo .charge li a {position:relative; display:block; padding:1px 21px; border:1px solid #CCC; text-align:center; color:#474747; background:#FFF;}
+.productInfo .charge li.text-del a {text-decoration:line-through; color:#999;}
+.productInfo .charge li a:hover {color:#E4393C; border-color:#E4393C;}
+.productInfo .charge .active a {padding:0px 20px; color:#E4393C; border:2px solid #E4393C; background:url(../images/inc-02.png) #FFF no-repeat right bottom;}
+.productInfo .changeNumber {margin-top:2px;}
+.productInfo .charge li.text-del a:hover {text-decoration:line-through; color:#999; border:1px solid #CCC;}
+.address .subList {top:24px; left:-1px;}
+
+.addressInfo label {float:left; margin-right:10px;}
+.addressInfo label select {height:26px; border:1px solid #CCC;}
+
+
+.productInfo .button {line-height:45px;}
+.productInfo .button a {display:block; width:185px; height:45px; float:left; font-size:20px; color:#999; text-align:center; margin:0 10px 20px 0; line-height:45px; background:url(../images/sprite.png) no-repeat -294px -100px;}
+.productInfo .button a.submit01 {color:#FFF; background-position:-479px -100px;}
+.productInfo .button a.submit02 {color:#FFF; background-position:-664px -100px;}
+
+.notice {font-size:12px;}
+
+.productPic,.sec {width:400px; float:left;}
+.sec {height:470px;}
+.productPic .moreLinks {margin:10px 0 0; color:#999;}
+.productPic .moreLinks span {float:left;}
+.productPic .moreLinks .icon {width:15px; height:19px; margin-right:5px; background-position:-408px -38px;}
+.productPic .moreLinks a {color:#999;}
+
+#msg{position:fixed; width:1px; top:300px; right:35px; z-index:10000; height:52px; line-height:52px; font-size:20px; text-align:center; color:#fff; background:#360; display:none;}
+
+.guestbook {}
+
+.guestList { margin-top:-10px;}
+.guestList li {padding:15px 0; border-bottom:1px dotted #DDD;}
+.guestList .conts {width:60%; float:left;}
+.guestList .users,.guestList .stars {width:20%; float:left;}
+.guestList .users {line-height:24px;}
+.guestList .users span {width:100%; float:left; margin:0 10px;}
+.guestList .reply {width:100%; padding:5px 10px; margin-top:10px; float:left; background:#F0F0F0;}
+.guestList .commstar.showStar{display:inline-block; background:none; text-align:left; margin-top:0px;}
+.guestList .commstar.showStar > .star{display:inline-block; height:20px; background:url(../images/commstar02.png) left top repeat-x;}
+
+.commstar{width:70px; height:14px; background: url(../images/commstar02.png) 0 -14px repeat-x; position:relative; margin-top:4px; overflow:hidden; zoom:1;}
+.commstar a{cursor:pointer; position:absolute; top:0; left:0; display:inline-block; height:20px;}
+.commstar .star1{width:20%; z-index:9;}
+.commstar .star2{width:40%; z-index:8;}
+.commstar .star3{width:60%; z-index:7;}
+.commstar .star4{width:80%; z-index:6;}
+.commstar .star5{width:100%; z-index:5;}
+.commstar .active, .commstar a:hover{background:url(../images/commstar02.png) left top repeat-x;}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+.subLinks ul,.subLinks ol,.subLinks li,.myUserInfo,.codeNumber,.item,.item .cont,.userInfoList,.codeNumber ul,.dataList,.regist_cent .button {width:100%; float:left;}
+.imgBorder {border:1px solid #d7d7d7;}
+
+.sidebar,.main {width:180px; margin-top:10px;}
+.sidebar .subLinks {padding-bottom:20px;}
+.sidebar .subLinks h2 {height:42px; color:#FFF; line-height:42px; background:#4EB248;}
+
+.subLinks ul {padding:0 0 10px;}
+.subLinks ol {font-size:15px; line-height:36px; margin-bottom:5px; background:#E5E5E5;}
+.subLinks ol .icon {width:30px; height:30px; margin:3px 0 0;}
+.subLinks .icon01 {background-position:-580px -40px;}
+.subLinks .icon02 {background-position:-610px -40px;}
+.subLinks .icon03 {background-position:-640px -40px;}
+.subLinks .icon04 {background-position:-460px -70px;}
+.subLinks .icon05 {background-position:-490px -70px;}
+.subLinks li {line-height:26px; text-indent:32px;}
+.subLinks li a {color:#666;}
+.subLinks li a:hover,.subLinks li.active a {color:#4EB248;}
+
+
+.main {width:810px;}
+.myUserInfo {height:100px; border:1px solid #DDD; padding:10px;}
+
+.userInfo {width:180px; float:left;}
+.userInfo .pic {width:70px; height:70px; float:left; border-radius:50%; margin:5px 15px 0 10px; overflow:hidden;}
+.userInfo .userName {width:80px; margin-top:15px; font-size:18px; float:left;} 
+.userInfo .userName p {float:left;}
+
+.userInfoList {width:500px; margin-left:30px;}
+.userInfoList ul {margin-top:5px;}
+.userInfoList li {width:50%; line-height:34px; float:left;}
+.userInfoList li span {width:60px; float:left; text-align:center; color:#666;}
+
+.codeNumber ul {margin:10px 0;}
+.codeNumber li {width:260px; float:left; padding:10px 0; margin-right:15px; border:1px solid #DDD; border-radius:4px;}
+.codeNumber li:last-child {margin:0;}
+.codeNumber li span {width:100px; float:left; text-align:right; color:#666;}
+
+.main .item {}
+.main .item h2 {height:33px; border-bottom:1px solid #DDD;}
+.main .item h2 .title {height:34px; float:left; padding:0 10px; margin-right:10px; line-height:34px; border-bottom:3px solid #4EB248;}
+.main .item h2 .more {float:right; font-size:12px; margin-top:15px;}
+.main .item .row {margin:0 0 20px;}
+.main .item .table .blue a {margin-left:10px;}
+.main .item .table .blue a:first-child {margin:0;}
+.main .item .table .blue a:hover {color:#F68A0C;}
+
+/** codeList **/
+.codeList {}
+.codeSearch {height:44px; border:1px solid #DDD; border-bottom:2px solid #DDD; padding:10px; background:#F5F5F5;}
+.codeSearch span,.codeSearch label {float:left;}
+.codeSearch label {position:relative;}
+.codeSearch .text {width:90px; height:24px; padding:0 5px;}
+.codeSearch .longth {width:120px;}
+.codeSearch .btn {width:auto; min-width:60px; height:26px; padding:0 10px; float:left; font-size:12px; line-height:14px; margin-left:10px; line-height:12px;}
+.codeSearch label .dates {width:115px; padding-right:30px;}
+.codeSearch label .iconDate {position:absolute; width:25px; height:22px; line-height:normal; top:1px; right:1px; background-position:-153px -67px;}
+
+/**  **/
+.orderList .tableB {border:1px solid #DDD;}
+.orderList .list {border-bottom:1px solid #DDD; border-right:1px solid #DDD;}
+.orderList .list td {text-align:center; color:#888;}
+.orderList .list td.none {border:none;}
+.orderList .list .pic {width:60px; height:60px;}
+.orderList .list .pic a {float:left; padding:1px; background:#F4F4F5;}
+.orderList .list .pic a:hover {background:#4EB248;}
+.orderList .list .title { float:left; text-align:left;}
+
+/** addressList **/
+.addressList {}
+.addressList div.title {color:#FFF; line-height:34px; padding:0 10px; background:#4EB248;}
+.addressList .row2 div.title {background:#8E5AA0;}
+.addressList .row3 div.title {background:#21A8C0;}
+.addressList  div.title .white a:hover {text-decoration:underline;}
+.addressList .table tr td {position:relative;}
+.addressList i.default {position:absolute; float:left; padding:0 5px; line-height:20px; left:10px; color:#FFF; background:#FF9109; font-style:normal; border-radius:3px;}
+
+#changeMyAddress .tableForm li span {width:140px; line-height:30px; text-align:right;}
+#changeMyAddress .tableForm li .text {width:245px !important; height:30px !important;}
+#changeMyAddress .tableForm li select.text {width:75px !important; float:left; margin-right:10px;}
+#changeMyAddress .tableForm li .longth {width:400px !important;}
+#changeMyAddress .tableForm li .short {width:150px !important;}
+#changeMyAddress .tableForm li .btn {width:130px !important; height:40px !important;}
+#changeMyAddress .tableForm li.button {margin:15px 0 20px;}
+
+#changeAddress .showCont {width:760px; top:0;  margin:100px 0 0 -380px;}
+#changeAddress .showCont .dataList {max-height:350px;*height:350px; overflow-y:auto;}
+#changeMyAddress .showCont,#changeSerAddress .showCont {width:600px;}
+.showCont .notice {width:100%; padding:5px 10px; color:#F52427; margin-bottom:10px; border:1px solid #FFE57D; background:#FFF6D2;}
+
+/*#getPrize .tableForm li {padding-bottom:5px;}
+#getPrize .tableForm li span {width:100px; line-height:30px; text-align:right;}
+#getPrize .tableForm li .text {width:360px !important; height:30px !important;}
+#getPrize .tableForm li .btn {width:130px !important; height:40px !important;}
+#getPrize .tableForm li.button {margin:15px 0 20px;}*/
+
+/** serviceList **/
+.serviceList {width:220px; margin:10px 0; height:320px; border:1px solid #CCC; border-radius:3px;}
+.serviceList h3 {height:40px; background:#EEE; text-indent:5px; line-height:40px;}
+.serviceList ul {width:100%; max-height:275px; float:left; overflow-y:auto;}
+.serviceList li {height:30px; font-size:13px; line-height:30px;}
+.serviceList li a {display:block; width:100%; height:100%; color:#666; float:left; text-indent:10px;}
+.serviceList li a:hover {background:#F0F0F0;}
+.serviceList li.active a {color:#FFF; background:#4EB248;}
+
+.formCont .button {width:140px; height:320px; float:left; padding-top:40px; margin:10px 0; text-align:center;}
+.formCont .button label {width:100%; float:left; margin-top:15px;}
+.formCont .button .btn {width:100px;}
+
+/** collectList **/
+.collectList .item {width:25%; float:left; padding:10px 0;}
+.collectList .item h2 {max-width:165px; height:22px; line-height:22px; font-size:14px; text-indent:0; background:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; border-bottom:none;}
+.collectList .item h2 a:hover {text-decoration:underline;}
+.collectList .item p {color:#999;}
+.collectList .item .pic {position:relative; width:160px; height:160px; margin:0 auto; display:table;}
+.collectList .item .pic a {float:left; padding:1px; background:#F4F4F5;}
+.collectList .item .pic a.black:hover {background:#4EB248;}
+.collectList .item .pic .delete {position:absolute; width:19px; height:19px; text-align:center; line-height:19px; color:#FFF; font-style:normal; background:url(../images/sprite.png) no-repeat -441px -38px; font-size:12px; right:5px; top:5px; display:none;}
+.collectList .item .info {padding:10px 0 0 15px;}
+
+/** myFeedback **/
+.myFeedback{font-size:12px;}
+.myFeedback .cont {padding:20px; border:1px solid #DDD; border-top:none;}
+.myFeedback h2 .btn-green {width:90px; height:30px; line-height:16px; background:#f18E09; margin-top:-5px; border-radius:3px;}
+.myFeedback .words table{margin-bottom:15px;}
+.myFeedback .myWords .texts{background:#4eb248;}
+.myFeedback .serviceWords .texts{background:#239fb1;}
+.myFeedback .words .texts{border-radius:6px; line-height:26px; padding:10px; position:relative;}
+.myFeedback .words .timestamp{color:#aaaaaa;}
+.myFeedback .words .trigon1, .myFeedback .words .trigon2{position:absolute; overflow:hidden; border-style:solid;}
+.myFeedback .myWords .trigon1{top:20px; left:-30px; border-width:3px 15px; border-color:transparent #4eb248 transparent transparent;}
+.myFeedback .myWords .trigon2{top:20px; left:-16px; border-width:5px 8px; border-color:#ffffff transparent transparent #ffffff;}
+.myFeedback .serviceWords .trigon1{top:20px; right:-30px; border-width:3px 15px; border-color:transparent transparent transparent #239fb1;}
+.myFeedback .serviceWords .trigon2{top:20px; right:-16px; border-width:5px 8px; border-color:#ffffff #ffffff transparent transparent;}
+
+.panel > .panel-heading > .actions{float:right;} 
+.panel > .panel-heading > .actions button {width:90px; height:38px; line-height:34px; border:none; background:url(../images/sprite.png) no-repeat -370px 0; margin-top:-7px;}
+
+#submitFeedback .showCont {width:550px;}
+#submitFeedback .tableForm li {margin-bottom:5px;}
+#submitFeedback .tableForm li span {width:120px; line-height:30px; text-align:right;}
+#submitFeedback .tableForm li .text {width:370px !important; height:30px !important; border-radius:2px;}
+#submitFeedback .tableForm li textarea.text {height:80px !important; padding-top:4px;}
+#submitFeedback .tableForm li .short {width:240px !important;}
+#submitFeedback .tableForm li .btn {width:120px !important; height:34px !important;}
+#submitFeedback .tableForm li.button {margin-top:10px;}
+
+
+/** pickingManager **/
+.pickingManager .pickingSearch{border:1px solid #DDD; border-bottom:2px solid #DDD; padding:10px; background:#F5F5F5;}
+.pickingManager .tableForm .title{width:75px; text-align:right;}
+.pickingManager .tableForm li .text{width:130px;}
+.pickingManager .tableForm li .short{width:80px; padding-left:5px;}
+.pickingManager .tableForm .divider{padding:0px 3px;}
+.pickingManager .tableForm li .longth {width:178px;}
+.pickingManager .tableForm li .select {width:auto;}
+.pickingManager .tableB {border:1px solid #DDD;}
+.pickingManager .list {border-bottom:1px solid #DDD; border-right:1px solid #DDD;}
+.pickingManager .list td {text-align:center; color:#888;}
+.pickingManager .list td.none {border:none;}
+.pickingManager .list .pic {width:60px; height:60px;}
+.pickingManager .list .pic a {float:left; padding:1px; background:#F4F4F5;}
+.pickingManager .list .pic a:hover {background:#4EB248;}
+.pickingManager .list .title {float:left; text-align:left;}
+
+
+/* goodsEvaluation */
+.goodsEvaluation > .panel{-webkit-box-shadow:none; box-shadow:none; }
+.goodsEvaluation .panel .xindeEl > div > span{display:block; float:left;}
+.goodsEvaluation .panel .xindeEl > div > span.lable{width:90px;}
+.goodsEvaluation .panel .xindeEl textarea.text{width:600px; height:60px;}
+.goodsEvaluation .list .pic a {float:left; padding:1px; background:#F4F4F5;}
+.goodsEvaluation .list .pic a:hover {background:#4EB248;}
+.goodsEvaluation .list td.lrBorderNone {border-left:none; border-right:none;}
+.commstar{width:70px; height:14px; background: url(../images/commstar02.png) 0 -14px repeat-x; position:relative; margin-top:4px; overflow:hidden; zoom:1;}
+.commstar a{cursor:pointer; position:absolute; top:0; left:0; display:inline-block; height:20px;}
+.commstar .star1{width:20%; z-index:9;}
+.commstar .star2{width:40%; z-index:8;}
+.commstar .star3{width:60%; z-index:7;}
+.commstar .star4{width:80%; z-index:6;}
+.commstar .star5{width:100%; z-index:5;}
+.commstar .active, .commstar a:hover{background:url(../images/commstar02.png) left top repeat-x;}
+
+
+/* myEvaluation */
+.commstar.showStar{display:inline-block; background:none; text-align:left; margin-top:0px;}
+.commstar.showStar > .star{display:inline-block; height:20px; background:url(../images/commstar02.png) left top repeat-x;}
+.myEvaluation .list .pic a {float:left; padding:1px; background:#F4F4F5;}
+.myEvaluation .list .pic a:hover {background:#4EB248;}
+.myEvaluation .list td.alignLeft{text-align:left;}
+.myEvaluation .list .reply{background:#F2F2F2; padding:10px;}

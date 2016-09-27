@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<!-- Demostration for Sql Mapping File -->
+
+<!-- Namespace should be the same as full-qualified package interface -->
+<mapper namespace="com.tiger.framework.dao.IWalletMapper"> 
+
+    <!-- Define some sql sentences snippets -->
+	
+	<!-- fields that match the sql table -->
+	<sql id="sql_insert_wallet_column_list">
+	    ID,
+        NICKNAME,
+	    USER_ID,
+	    PAY_PASSWORD,
+	    LAST_USED_AT,
+	    PASSWORD_LAST_MODIFIED_AT,
+	    CREATED_AT,
+	    STATUS
+	    
+  	</sql>
+  	
+  	<!-- fields in the corresponding data model -->
+  	<sql id="sql_insert_wallet_value_list">
+        #{id,                         jdbcType=NUMERIC},
+    	#{nickName,			          jdbcType=VARCHAR},
+    	#{userId,                     jdbcType=VARCHAR},
+    	#{payPassword,                jdbcType=VARCHAR},
+    	SYSDATE,
+    	SYSDATE,
+    	SYSDATE,
+    	#{status,                     jdbcType=NUMERIC}
+  	</sql>
+
+	<!--Define sql sentences and mapping to the methods in mapper interface  -->
+
+	<!-- mapper to createWallet() method -->
+    <insert id="createWallet" parameterType="Wallet">
+    
+       <!--  PK: OracleSequence -->
+       <selectKey keyProperty="id" resultType="java.lang.Long" order="BEFORE">
+         SELECT WALLET_SEQ.NEXTVAL FROM dual
+       </selectKey> 
+       
+       <!-- complete the whole sql sentences -->
+       INSERT INTO WALLET(
+       	<include refid="sql_insert_wallet_column_list" />
+       )
+       
+       VALUES(
+      	<include refid="sql_insert_wallet_value_list" /> 
+       )
+    </insert> 
+   
+    <!-- mapper to resetPassword() method -->
+    <update id="resetPassword" parameterType="Wallet">
+    	UPDATE 
+    		WALLET 
+    	SET 
+    		PAY_PASSWORD = #{payPassword},
+    		PASSWORD_LAST_MODIFIED_AT = sysdate
+    	WHERE 
+    		USER_ID = #{userId}
+    </update>
+    
+    <!-- retrieve wallet number -->
+    <select id="getTotalCount" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM WALLET
+    </select>
+    
+    
+  <!-- demo pagination -->
+  
+    <sql id="sql_column_list">
+     ID,
+     NICKNAME,
+     USER_ID,
+     LAST_USED_AT,
+     PASSWORD_LAST_MODIFIED_AT,
+     CREATED_AT,
+     STATUS,
+     PAY_PASSWORD
+    </sql>
+  
+
+  
+  <resultMap id="walletResultMap" type="com.tiger.framework.datamodel.Wallet">
+  	<result column="ID" property="id" jdbcType="INTEGER"/>  
+    <result column="NICKNAME" property="nickName" jdbcType="VARCHAR" javaType="java.lang.String" />  
+    <result column="USER_ID" property="userId" jdbcType="VARCHAR" javaType="java.lang.String" />  
+	<result column="LAST_USED_AT" property="lastUsedAt" jdbcType="DATE" javaType="java.sql.Date"/>
+	<result column="PASSWORD_LAST_MODIFIED_AT" property="passwordLastModifiedAt" jdbcType="DATE" javaType="java.sql.Date"/>
+	<result column="CREATED_AT" property="createdAt" jdbcType="DATE" javaType="java.sql.Date"/>
+	<result column="STATUS" property="status" jdbcType="INTEGER"/>
+	<result column="PAY_PASSWORD" property="payPassword" jdbcType="VARCHAR" javaType="java.lang.String" />
+  </resultMap>
+  
+   <select id="retrieveWallets" parameterType="com.github.miemiedev.mybatis.paginator.domain.PageBounds"  resultMap="walletResultMap">
+    SELECT
+      <include refid="sql_column_list" />
+    FROM wallet
+  </select>
+    
+</mapper>
