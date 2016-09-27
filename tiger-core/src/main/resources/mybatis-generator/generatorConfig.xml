@@ -17,7 +17,7 @@
                         connectionURL="jdbc:mysql://172.19.64.35:3306/ettodaypoc?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull" userId="root"
                         password="Admin123"/>
 
-        <javaModelGenerator targetPackage="com.tiger.framework.datamodel"
+        <javaModelGenerator targetPackage="com.pharmacodia.dg.framework.datamodel"
                             targetProject="${gen.src.dir}\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
@@ -28,7 +28,7 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.tiger.framework.dao"
+        <javaClientGenerator targetPackage="com.pharmacodia.dg.framework.dao"
                              targetProject="${gen.src.dir}\src\main\java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

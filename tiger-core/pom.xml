@@ -5,11 +5,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.tiger</groupId>
-		<artifactId>tiger-parent</artifactId>
+		<groupId>com.pharmacodia.dg</groupId>
+		<artifactId>yaodu-daogou-parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>tiger-core</artifactId>
+	<artifactId>yaodu-daogou-core</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.artifactId} v${project.version}</name>
 

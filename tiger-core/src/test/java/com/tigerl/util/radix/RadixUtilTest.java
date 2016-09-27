@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.tiger.utils.cipher.EncryptUtil;
-import com.tiger.utils.radix.RadixUtil;
+import com.pharmacodia.dg.utils.cipher.EncryptUtil;
+import com.pharmacodia.dg.utils.radix.RadixUtil;
 
 public class RadixUtilTest {
 

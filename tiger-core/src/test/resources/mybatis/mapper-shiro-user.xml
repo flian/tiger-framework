@@ -6,7 +6,7 @@
 <!-- Demostration for Sql Mapping File -->
 
 <!-- Namespace should be the same as full-qualified package interface -->
-<mapper namespace="com.tiger.framework.dao.IShiroUserMapper"> 
+<mapper namespace="com.pharmacodia.dg.framework.dao.IShiroUserMapper">
 
     <select id="fetchUserByName" resultMap="shiroUser">
 		SELECT ID,USERNAME,PASSWORD
@@ -34,13 +34,13 @@
 	</select>
 	
 	
-	<resultMap type="com.tiger.framework.datamodel.ShiroUser" id="shiroUser">
+	<resultMap type="com.pharmacodia.dg.framework.datamodel.ShiroUser" id="shiroUser">
 		<result property="id" column="ID" />
 		<result property="userName" column="USERNAME" />
 		<result property="password" column="PASSWORD" />
 	</resultMap>
 	
-	<resultMap type="com.tiger.framework.datamodel.Menu" id="shiroUserMenu">
+	<resultMap type="com.pharmacodia.dg.framework.datamodel.Menu" id="shiroUserMenu">
 	    <result property="id" column="ID"/>
 	    <result property="name" column="RESOURCE_NAME"/>
 	    <result property="url"  column="RESOURCE_URL"/>

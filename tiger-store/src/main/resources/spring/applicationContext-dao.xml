@@ -23,7 +23,7 @@
     <context:annotation-config/>
 
     <!-- Enable Package Scan-->
-    <context:component-scan base-package="com.tiger.framework.dbservice.impl"/>
+    <context:component-scan base-package="com.pharmacodia.dg.framework.dbservice.impl"/>
 
     <!-- Enable Annotation -->
     <tx:annotation-driven/>

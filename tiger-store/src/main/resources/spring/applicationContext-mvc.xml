@@ -27,13 +27,13 @@
 	</mvc:interceptors>
 
 	<!-- Enable the controller -->
-	<context:component-scan base-package="com.tiger.framework.controller" />
+	<context:component-scan base-package="com.pharmacodia.dg.framework.controller" />
 
 
 
 	<!-- Freemarker Config -->
 	<bean id="freemarkerConfig"
-		class="com.tiger.framework.security.freemarker.ShiroTagFreeMarkerConfigurer">
+		class="com.pharmacodia.dg.framework.security.freemarker.ShiroTagFreeMarkerConfigurer">
 		<property name="templateLoaderPath" value="/WEB-INF/view/" />
 		<property name="freemarkerVariables">
 			<map>

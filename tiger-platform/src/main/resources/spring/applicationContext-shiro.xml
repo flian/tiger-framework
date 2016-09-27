@@ -14,7 +14,7 @@
 	
 
 
-	<bean id="shiroRealm" class="com.tiger.framework.security.UserRealm"/>
+	<bean id="shiroRealm" class="com.pharmacodia.dg.framework.security.UserRealm"/>
 	
     <!-- Shiro's main business-tier object for web-enabled applications -->
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">

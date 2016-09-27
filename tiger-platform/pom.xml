@@ -3,15 +3,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.tiger</groupId>
-		<artifactId>tiger-parent</artifactId>
+		<groupId>com.pharmacodia.dg</groupId>
+		<artifactId>yaodu-daogou-parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
 	<!-- tiger 3-dimension coordinate -->
-	<artifactId>tiger-platform</artifactId>
+	<artifactId>yaodu-daogou-platform</artifactId>
 	<packaging>war</packaging>
-	<name>tiger-platform</name>
+	<name>yaodu-daogou-platform</name>
 
 	<!-- Define the artifact lists -->
 	<dependencies>
@@ -20,7 +20,7 @@
 		<!-- depends on tiger core -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>tiger-core</artifactId>
+			<artifactId>yaodu-daogou-core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 

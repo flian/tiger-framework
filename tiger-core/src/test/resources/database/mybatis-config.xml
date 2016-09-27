@@ -15,8 +15,8 @@
     
     <!--Define Type Alias -->
     <typeAliases> 
-       <typeAlias alias="Wallet" type="com.tiger.framework.datamodel.Wallet"/>
-       <typeAlias alias="ShiroUser" type="com.tiger.framework.datamodel.ShiroUser"/>
+       <typeAlias alias="Wallet" type="com.pharmacodia.dg.framework.datamodel.Wallet"/>
+       <typeAlias alias="ShiroUser" type="com.pharmacodia.dg.framework.datamodel.ShiroUser"/>
         <typeAlias alias="PageBounds" type="com.github.miemiedev.mybatis.paginator.domain.PageBounds"/>
     </typeAliases>
 

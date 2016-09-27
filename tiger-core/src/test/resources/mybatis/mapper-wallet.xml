@@ -6,7 +6,7 @@
 <!-- Demostration for Sql Mapping File -->
 
 <!-- Namespace should be the same as full-qualified package interface -->
-<mapper namespace="com.tiger.framework.dao.IWalletMapper"> 
+<mapper namespace="com.pharmacodia.dg.framework.dao.IWalletMapper">
 
     <!-- Define some sql sentences snippets -->
 	
@@ -87,7 +87,7 @@
   
 
   
-  <resultMap id="walletResultMap" type="com.tiger.framework.datamodel.Wallet">
+  <resultMap id="walletResultMap" type="com.pharmacodia.dg.framework.datamodel.Wallet">
   	<result column="ID" property="id" jdbcType="INTEGER"/>  
     <result column="NICKNAME" property="nickName" jdbcType="VARCHAR" javaType="java.lang.String" />  
     <result column="USER_ID" property="userId" jdbcType="VARCHAR" javaType="java.lang.String" />  
