@@ -14,9 +14,9 @@
 
 	<!-- Module List -->
 	<modules>
-		<module>tiger-core</module> <!-- Core Modules -->
-		<module>tiger-platform</module> <!-- Demo Admin Module -->
-		<module>tiger-store</module> <!-- Demo Store Module -->
+		<module>yaodu-daogou-core</module> <!-- Core Modules -->
+		<module>yaodu-daogou-platform</module> <!-- Demo Admin Module -->
+		<module>yaodu-daogou-store</module> <!-- Demo Store Module -->
 	</modules>
 
 	<!-- 定义各个构件的版本号 -->

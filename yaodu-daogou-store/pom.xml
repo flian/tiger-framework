@@ -236,7 +236,7 @@
 	</mailingLists>
 	
 	<build>
-		<finalName>tiger-platform</finalName>
+		<finalName>yaodu-daogou-store</finalName>
 		
 		<plugins>
 			<plugin>

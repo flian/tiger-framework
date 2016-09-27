@@ -90,7 +90,7 @@ public class ProductServiceImpl implements IProductService {
 	public List<SkuListDTO> selectSkuListDTO(PageBounds pg,Long productId) {
 		Map<String,Object> params = new HashMap<String,Object>();
 		params.put("productId", productId);
-		List<SkuListDTO> dto = frameworkSqlSession.selectList("com.tiger.framework.dao.ProductMapper.selectSkuListDTO", params, pg);
+		List<SkuListDTO> dto = frameworkSqlSession.selectList("com.pharmacodia.dg.framework.dao.ProductMapper.selectSkuListDTO", params, pg);
 		return dto;
 	}
 	
@@ -100,7 +100,7 @@ public class ProductServiceImpl implements IProductService {
 		if(!carts.isEmpty()){
 			Map<String,Object> params = new HashMap<String,Object>();
 			params.put("carts", carts);
-			List<SKU> skulist = frameworkSqlSession.selectList("com.tiger.framework.dao.SKUMapper.getCart", params);
+			List<SKU> skulist = frameworkSqlSession.selectList("com.pharmacodia.dg.framework.dao.SKUMapper.getCart", params);
 			for(SKU sku : skulist){
 				CartDTO dto = new CartDTO();
 				dto.setSku(sku);
