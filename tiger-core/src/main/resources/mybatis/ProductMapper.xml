@@ -189,7 +189,7 @@
   </resultMap>
   <select id="selectSkuListDTO" resultMap="skuListDTO">
   	select s.id as id,p.id as productid, s.name,s.sale_price as price,
-  	s.stock_level as stockLevel
+  	1 as stockLevel
   	from sku s left join product p on s.product_id = p.id
   	where 1=1 
   	<if test="productId != null" >
