@@ -75,4 +75,15 @@
         <constructor-arg ref="frameworkSqlSessionFactory"/>
     </bean>
 
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.tiger.framework.dao.tk"/>
+        <property name="sqlSessionTemplateBeanName" value="frameworkSqlSessionTemplate"/>
+        <!-- 通用Mapper通过属性注入进行配置，默认不配置时会注册Mapper<T>接口
+        <property name="properties">
+            <value>
+                mappers=tk.mybatis.mapper.common.Mapper
+            </value>
+        </property>
+        -->
+    </bean>
 </beans>

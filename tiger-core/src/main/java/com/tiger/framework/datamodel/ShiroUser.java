@@ -1,5 +1,7 @@
 package com.tiger.framework.datamodel;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
@@ -10,10 +12,11 @@ import java.io.Serializable;
  *
  * @author charles.wang
  */
-
+@Table(name="shiro_users")
 public class ShiroUser implements Serializable{
 	
 	private long id;
+	@Column(name="userName")
 	private String userName;
 	private String password;
 
