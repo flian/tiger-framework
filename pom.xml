@@ -144,6 +144,12 @@
 				<artifactId>mapper</artifactId>
 				<version>3.3.9</version>
 			</dependency>
+			<!--mybatis 分页-->
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper</artifactId>
+				<version>4.1.6</version>
+			</dependency>
 			<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 			<dependency>
 				<groupId>com.google.guava</groupId>

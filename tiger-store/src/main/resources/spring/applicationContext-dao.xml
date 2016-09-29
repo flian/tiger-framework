@@ -70,7 +70,18 @@
         <property name="dataSource">
             <ref bean="frameworkDataSource"/>
         </property>
-
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageHelper">
+                    <property name="properties">
+                        <value>
+                            dialect=mysql
+                            reasonable=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
     <!-- Sql Session -->
