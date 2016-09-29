@@ -14,14 +14,21 @@
 	
 
 
-	<bean id="shiroRealm" class="com.tiger.framework.security.UserRealm"/>
+	<bean id="shiroRealm" class="com.tiger.framework.security.UserRealm">
+		<property name="credentialsMatcher" ref="credentialsMatcher"/>
+	</bean>
 	
     <!-- Shiro's main business-tier object for web-enabled applications -->
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 	    <!-- single realm -->
-		<property name="realm" ref="shiroRealm" />	 
+		<property name="realm" ref="shiroRealm" />
 	</bean>
-	
+
+	<bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+		<property name="hashAlgorithmName" value="md5"/>
+		<property name="hashIterations" value="2"/>
+		<property name="storedCredentialsHexEncoded" value="true"/>
+	</bean>
 
 	
 	<!-- Shiro Filter -->

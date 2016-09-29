@@ -5,8 +5,12 @@ import java.util.Set;
 
 import javax.annotation.Resource;
 
+import com.tiger.utils.tools.StringUtil;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
+import org.apache.shiro.authc.credential.HashingPasswordService;
+import org.apache.shiro.crypto.hash.Hash;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,8 +33,18 @@ import com.tiger.framework.dbservice.IShiroUserDBService;
 
 @Service("shiroUserDBService")
 public class ShiroUserDBServiceImpl implements IShiroUserDBService{
-	
-	
+
+	public PasswordHelper getPasswordHelper() {
+		return passwordHelper;
+	}
+
+	public void setPasswordHelper(PasswordHelper passwordHelper) {
+		this.passwordHelper = passwordHelper;
+	}
+
+	@Autowired
+	private PasswordHelper passwordHelper;
+
 	@Resource(name = "frameworkSqlSession")
 	private SqlSession frameworkSqlSession;
 	private static final Logger LOGGER = Logger.getLogger(WalletDBServiceImpl.class);
@@ -66,7 +80,28 @@ public class ShiroUserDBServiceImpl implements IShiroUserDBService{
 		IShiroUserMapper shiroUserMapper = frameworkSqlSession.getMapper(IShiroUserMapper.class);
 		return shiroUserMapper.fetchUserMenusByName(userName);
 	}
-	
-	
+
+	@Override
+	public boolean updatePassord(String userName, String newPassword) {
+		IShiroUserMapper shiroUserMapper = frameworkSqlSession.getMapper(IShiroUserMapper.class);
+		ShiroUser user = shiroUserMapper.fetchUserByName(userName);
+		user.setPassword(newPassword);
+		passwordHelper.encryptPassword(user);
+		return shiroUserMapper.updatePassword(userName, user.getPassword(),user.getCredentialsSalt());
+	}
+
+	@Override
+	public boolean saveOrUpdateUser(ShiroUser user) {
+		if(isNew(user)){
+			passwordHelper.encryptPassword(user);
+		}
+
+		IShiroUserMapper shiroUserMapper = frameworkSqlSession.getMapper(IShiroUserMapper.class);
+		return shiroUserMapper.saveOrUpdate(user);
+	}
+
+	public boolean isNew(ShiroUser user){
+		return StringUtil.isNullOrBlank(user.getSalt())? true:false;
+	}
 
 }

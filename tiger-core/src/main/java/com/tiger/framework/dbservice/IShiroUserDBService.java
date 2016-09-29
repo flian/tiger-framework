@@ -45,4 +45,21 @@ public interface IShiroUserDBService {
 	 * @return Liset<MenuDTO> 菜单集合
 	 */
     List<Menu> retrieveUserMenusByName(String userName);
+
+	/**
+	 * 根据用户名更新密码
+	 *
+	 * @param userName
+	 * @param newPassword
+	 * @return
+	 */
+	public boolean updatePassord(String userName,String newPassword);
+
+	/**
+	 * 保存、更新用户信息
+	 * @param user
+	 * @return
+	 */
+
+	public boolean saveOrUpdateUser(ShiroUser user);
 }

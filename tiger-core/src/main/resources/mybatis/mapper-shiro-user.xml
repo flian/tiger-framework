@@ -9,7 +9,7 @@
 <mapper namespace="com.tiger.framework.dao.IShiroUserMapper"> 
 
     <select id="fetchUserByName" resultMap="shiroUser">
-		SELECT ID,USERNAME,PASSWORD
+		SELECT ID,USERNAME,PASSWORD,SALT
 		FROM SHIRO_USERS 
 		WHERE USERNAME = #{userName}
 	</select>
@@ -33,7 +33,10 @@
         WHERE sres.RESOURCE_TYPE=1 AND su.USERNAME=#{userName} AND su.ID=srur.USER_ID AND srur.ROLE_ID=sr.ID AND sr.ID=srrr.ROLE_ID AND srrr.RESOURCE_ID=sres.ID
 	</select>
 	
-	
+	<update id="updatePassword">
+		UPDATE shiro_users SET password=#{newPassword},salt=#{salt} WHERE USERNAME=#{username}
+	</update>
+
 	<resultMap type="com.tiger.framework.datamodel.ShiroUser" id="shiroUser">
 		<result property="id" column="ID" />
 		<result property="userName" column="USERNAME" />

@@ -24,6 +24,7 @@ import com.tiger.framework.datamodel.Menu;
 import com.tiger.framework.datamodel.ShiroUser;
 import com.tiger.framework.dbservice.IShiroUserDBService;
 import com.tiger.framework.dbservice.IWalletDBService;
+import org.apache.shiro.util.ByteSource;
 
 
 /**
@@ -63,7 +64,7 @@ public class UserRealm extends AuthorizingRealm {
 			throw new UnknownAccountException();
 		
 		//交给AuthenticatingRealm使用CredentialsMatcher进行密码匹配
-		SimpleAuthenticationInfo authnInfo = new SimpleAuthenticationInfo(user.getUserName(),user.getPassword(),getName());
+		SimpleAuthenticationInfo authnInfo = new SimpleAuthenticationInfo(user.getUserName(),user.getPassword(), ByteSource.Util.bytes(user.getCredentialsSalt()),getName());
 		return authnInfo;
 	}
 	

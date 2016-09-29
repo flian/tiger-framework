@@ -16,6 +16,17 @@ public class ShiroUser implements Serializable{
 	private long id;
 	private String userName;
 	private String password;
+
+	public String getSalt() {
+		return salt;
+	}
+
+	public void setSalt(String salt) {
+		this.salt = salt;
+	}
+
+	private String salt;
+
 	public long getId() {
 		return id;
 	}
@@ -35,6 +46,8 @@ public class ShiroUser implements Serializable{
 		this.password = password;
 	}
 	
-	
+	public String getCredentialsSalt(){
+		return userName+salt;
+	}
 
 }

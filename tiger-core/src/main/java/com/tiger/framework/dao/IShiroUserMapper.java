@@ -46,4 +46,7 @@ public interface IShiroUserMapper {
 	 */
 	List<Menu> fetchUserMenusByName (String userName);
 
+	public boolean updatePassword(String userName, String newPassword,String salt);
+
+	public boolean saveOrUpdate(ShiroUser user);
 }
