@@ -53,7 +53,7 @@ public interface IShiroUserDBService {
 	 * @param newPassword
 	 * @return
 	 */
-	public boolean updatePassord(String userName,String newPassword);
+	public boolean updatePassword(String userName,String newPassword);
 
 	/**
 	 * 保存、更新用户信息
@@ -61,5 +61,6 @@ public interface IShiroUserDBService {
 	 * @return
 	 */
 
-	public boolean saveOrUpdateUser(ShiroUser user);
+	public boolean save(ShiroUser user);
+	public boolean update(ShiroUser user);
 }

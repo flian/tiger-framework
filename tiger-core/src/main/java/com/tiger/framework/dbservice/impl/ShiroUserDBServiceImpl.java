@@ -5,6 +5,7 @@ import java.util.Set;
 
 import javax.annotation.Resource;
 
+import com.tiger.framework.dao.tk.ShiroUserMapper;
 import com.tiger.utils.tools.StringUtil;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
@@ -49,6 +50,9 @@ public class ShiroUserDBServiceImpl implements IShiroUserDBService{
 	private SqlSession frameworkSqlSession;
 	private static final Logger LOGGER = Logger.getLogger(WalletDBServiceImpl.class);
 
+	@Autowired
+	private ShiroUserMapper tkUserDao;
+
 	@Override
 	@Transactional
 	public ShiroUser retrieveUserByName(String userName) {
@@ -82,22 +86,22 @@ public class ShiroUserDBServiceImpl implements IShiroUserDBService{
 	}
 
 	@Override
-	public boolean updatePassord(String userName, String newPassword) {
+	public boolean updatePassword(String userName, String newPassword) {
 		IShiroUserMapper shiroUserMapper = frameworkSqlSession.getMapper(IShiroUserMapper.class);
 		ShiroUser user = shiroUserMapper.fetchUserByName(userName);
 		user.setPassword(newPassword);
 		passwordHelper.encryptPassword(user);
-		return shiroUserMapper.updatePassword(userName, user.getPassword(),user.getSalt());
+		return shiroUserMapper.updatePassword(userName, user.getPassword(), user.getSalt());
 	}
 
-	@Override
-	public boolean saveOrUpdateUser(ShiroUser user) {
-		if(isNew(user)){
+	public boolean save(ShiroUser user) {
 			passwordHelper.encryptPassword(user);
-		}
+			return tkUserDao.insertSelective(user) > 0 ? true : false;
+	}
 
-		IShiroUserMapper shiroUserMapper = frameworkSqlSession.getMapper(IShiroUserMapper.class);
-		return shiroUserMapper.saveOrUpdate(user);
+	public boolean update(ShiroUser user){
+		tkUserDao.updateByPrimaryKeySelective(user);
+		return true;
 	}
 
 	public boolean isNew(ShiroUser user){
