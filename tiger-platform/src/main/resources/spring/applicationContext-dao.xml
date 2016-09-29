@@ -63,13 +63,16 @@
         </property>
         <property name="plugins">
             <array>
-                <bean class="com.github.pagehelper.PageHelper">
+                <bean class="com.tiger.utils.Pagehelper">
                     <property name="properties">
                         <value>
                             dialect=mysql
                             reasonable=true
                         </value>
                     </property>
+                </bean>
+                <bean class="com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor">
+                    <property name="dialectClass" value="com.github.miemiedev.mybatis.paginator.dialect.MySQLDialect"/>
                 </bean>
             </array>
         </property>

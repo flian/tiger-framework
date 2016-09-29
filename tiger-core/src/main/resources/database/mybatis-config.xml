@@ -19,10 +19,6 @@
         <typeAlias alias="PageBounds" type="com.github.miemiedev.mybatis.paginator.domain.PageBounds"/>
     </typeAliases>
 
-    <plugins>
-        <plugin interceptor="com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor">
-            <property name="dialectClass" value="com.github.miemiedev.mybatis.paginator.dialect.MySQLDialect"/>
-        </plugin>
-    </plugins>
+
     
 </configuration>
