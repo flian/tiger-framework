@@ -55,6 +55,7 @@ public class PasswordHelper {
         admin.setPassword("admin");
         PasswordHelper ph=new PasswordHelper();
         ph.encryptPassword(admin);
-        System.out.println(""+admin.getUserName()+"::"+admin.getPassword()+"::"+admin.getCredentialsSalt());
+        System.out.println("用户名::密码::盐");
+        System.out.println(""+admin.getUserName()+"::"+admin.getPassword()+"::"+admin.getSalt());
     }
 }

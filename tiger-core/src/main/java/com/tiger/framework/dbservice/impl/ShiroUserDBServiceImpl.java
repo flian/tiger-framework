@@ -87,7 +87,7 @@ public class ShiroUserDBServiceImpl implements IShiroUserDBService{
 		ShiroUser user = shiroUserMapper.fetchUserByName(userName);
 		user.setPassword(newPassword);
 		passwordHelper.encryptPassword(user);
-		return shiroUserMapper.updatePassword(userName, user.getPassword(),user.getCredentialsSalt());
+		return shiroUserMapper.updatePassword(userName, user.getPassword(),user.getSalt());
 	}
 
 	@Override
